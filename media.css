@@ -60,11 +60,12 @@
             color: #000;
             padding: .5rem;
             background-color: #EBDFD4;
-            border: .2rem solid #EBDFD4;
+            border: .2rem solid #000000;
         }
         .content .title-header .mobile-link a:hover { 
             color: #EBDFD4;
             background-color: #000;
+            border: .2rem solid #EBDFD4;
         }
         .content .title-header .mobile-link span{
             display: block;
@@ -75,7 +76,7 @@
             display: none;
         }
         .restaurent-menu {
-            margin-top: 15rem;
+            margin-top: 18rem;
         }
 }
 

@@ -11,6 +11,39 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
     <style type="text/css">
+        .service-intro .text b {
+            border-radius: 4rem;
+        }
+        .service-intro .text {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        .fill-content {
+            position: relative;
+            margin-top: 30rem;
+            font-size: 3rem;
+            font-weight: bolder;
+            color: #EBDFD4;
+        }
+        .fill-content img { 
+            position: absolute;
+            z-index: 15;
+            width: 10rem;
+        }
+        .fill-content img:nth-child(1){
+            top:-10rem;
+            left: 0;
+        }
+        .fill-content img:nth-child(2){
+            top: -5rem;
+            left: 10rem;
+        }
+        .fill-content img:nth-child(3){
+            top: 10remrem;
+            right: 10rem;
+        }
+
+
         .restaurent-menu {
             text-align: center;
             margin-top: 30rem;
@@ -27,17 +60,19 @@
             margin: 1rem 0 1rem 1rem;
         }
         .restaurent-menu figure {
-            width: 20rem;
-            height: 30rem;
+            border-radius: 3rem;
             position: relative;
             overflow: hidden;
             
         }
         .restaurent-menu figure img {
+            object-fit: cover;
+        }
+        .restaurent-menu figure,
+        .restaurent-menu figure img { 
             width: 20rem;
             height: 30rem;
-            object-fit: cover;
-         }
+        }
         .restaurent-menu figure figcaption {
             box-sizing: border-box;
             padding: .2rem;
@@ -53,7 +88,43 @@
             background: rgba(0, 0, 0, 0);
 
          }
+         footer {
+            background-image: url(/img/menu-desktop-bg.jpg);
+        }
+        footer .legend {
+            top: 0;
+            left: 50%;
+            width: 10rem;
+            margin-left: -5rem;
+            background-image: url(./img/menu-desktop-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        footer .fieldset {
+             border: 0.1rem solid #EBDFE4;
+         }
+        footer .fieldset .link{
+            display: inline-flex;
+            width: 10rem;
+justify-content: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: #EBDFE4;
+            font-size: 1.5rem;
+        }
+        footer a .fa {
+            border: none;
+            width: 5px;
+            height: 5px;
+        }
 
+        footer a i {
+            padding: 1rem;
+
+        }
+        
         @media(max-width: 935px) {
             .restaurent-menu {
             margin-top: 15rem;
@@ -64,7 +135,9 @@
         .restaurent-menu figure {
             height: 25rem;
         }
-
+         footer .fieldset {
+            border: none;
+         }
         }
     </style>
 </head>
@@ -85,6 +158,7 @@
             <div class="menu-btn">
                 <div class="reservation"><a href="#">Reservation</a></div>
                 <div class="order"><a href="#">Order Online</a></div>
+                <div class="order"><a href="tel:+91 9368700697">+(91) 936-870-0697</a></div>
             </div>
         </div>
         <header>
@@ -108,7 +182,7 @@
                     <div class="intro"></div>
                 </div>
                 <div class="mobile-link float-left">
-                    <span><a href="tel:+91 123 456 789">+91(123)-456-7890</a></span>
+                    <span><a href="tel:+91 8923927454">+(91) 892-392-7454</a></span>
                     <span><a href="#">Online Order</a></span>
                     <span><a href="#">Reservation</a></span>
                 </div>
@@ -118,7 +192,7 @@
                 <p class="text">
                     Farmer Delight restaurant is a result of Passion.
                     With Gadwali-inspired Food it is nestled in the heart of ReshiKesh.
-                    Executive Chef <b class="alert-success"> <i>Owner name</i></b> brings with him years of
+                    Executive Chef <b class="alert-success p-1 "> <i>Ajay Raturi</i></b> brings with him years of
                     experience and leads the kitchen team with innovation and superb technique.
                 </p>
                 <p class="text">
@@ -132,6 +206,13 @@
                     <div><img class="img-fluid" src="./img/food/pizza.jpeg" alt="pizza" /></div>
                 </div>
             </div>
+        </div>
+        <div class="fill-content">
+            <img class="img-fluid" src="./img/floatingFood/orange.png" alt="">
+            <img class="img-fluid" src="./img/floatingFood/cheese.png" alt="">
+            <img class="img-fluid" src="./img/floatingFood/chili.png" alt="">
+            <span class="flavor">Flavorful and Fresh Components</span>
+            <span class="try-menu">try-menu</span>
         </div>
         <div class="restaurent-menu">
             <a href="#">
@@ -165,6 +246,21 @@
                 </figure>
             </a>
         </div>
+        <footer class="position-relative p-5">
+            <img class="img-fluid legend position-absolute pt-4 mt-3" src="./img/logo-2.png" alt="logo"/>
+            <div class="fieldset pt-4 mt-3">
+                <div class="link"><a href="#">home</a></div>
+                <div class="link"><a href="#">about</a></div>
+                <div class="link"><a href="#">order</a></div>
+                <div class="link"><a href="#">Reservation</a></div>
+                <div class="link"><a href="#">menu</a></div>
+                <div class="link"><a href="#">contect</a></div>
+            </div>
+            <div class="social-link">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </footer>
     </div>
     <script type="text/javascript" src="./custom.js"></script>
     <script type="text/javascript">
